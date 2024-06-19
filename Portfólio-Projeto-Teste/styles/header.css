@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  transition: 0.35s;
+}
+
+.menu li a:hover {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+
+  .menu li a {
+    background-color: #f5f7f1;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.37);
+    font-size: 1rem;
+  }
+
+  .menu li a:hover {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    margin-top: 1.6rem;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu li a {
+    background-color: #f5f7f1;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.37);
+    line-height: 2.2rem;
+    font-size: 1rem;
+  }
+
+  .menu li a:hover {
+    font-size: 1.2rem;
+  }
+}
